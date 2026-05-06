@@ -1,0 +1,28 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Data files (keep raw, ignore processed/temp)
+forecasting-system/data/processed/*.csv
+forecasting-system/data/processed/*.xlsx
+!forecasting-system/data/raw/sales_data.xlsx
+
+# Model files
+forecasting-system/saved_models/**/*.pkl
+forecasting-system/evaluation/*.csv
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Virtual environment
+venv/
+env/
+ENV/
