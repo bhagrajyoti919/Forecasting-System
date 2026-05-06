@@ -24,8 +24,7 @@ def train_sarima(train_df, validation_df):
         y_train = train_state['total']
         y_validation = validation_state['total']
 
-        # Build and train SARIMA model
-        # Using seasonal_order (1, 1, 1, 52) to match weekly data (yearly seasonality)
+       
         model = SARIMAX(
             y_train,
             order=(1, 1, 1),
